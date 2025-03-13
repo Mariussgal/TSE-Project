@@ -1,6 +1,6 @@
 'use client'
 import styles from './page.module.scss'
-import ZoomParallax from '../components/ZoomParallax/index.jsx';
+import ZoomParallax from '../components/ZoomParallax/index';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 
