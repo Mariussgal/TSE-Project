@@ -15,14 +15,13 @@
 
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: right;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 0;
   padding: 1rem 2rem;
   position: relative;
 }
-
 
 .menu-toggle {
   background: none;
@@ -32,7 +31,7 @@
   z-index: 1001;
   width: 30px;
   height: 30px;
-  padding: 0;
+  padding-right: 70px;
 }
 
 .menu-icon, 
@@ -74,6 +73,7 @@
   top: 0;
 }
 
+/* Navigation Menu */
 .nav-menu {
   position: fixed;
   top: 0;

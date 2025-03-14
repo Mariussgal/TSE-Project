@@ -12,7 +12,6 @@ const Header = () => {
   return (
     <header className={`header ${menuOpen ? 'menu-active' : ''}`}>
       <div className="header-container">
-        
         <button className={`menu-toggle ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span className="menu-icon"></span>
         </button>
