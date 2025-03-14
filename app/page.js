@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import ZoomParallax from '../components/Zoomparallax/index';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
+import Header from '../components/Header.jsx'
 
 export default function Home() {
 
@@ -18,7 +19,9 @@ export default function Home() {
     },[])
 
     return (
+        
         <main className={styles.main}>
+            <Header/>
             <ZoomParallax />
         </main>
     )
