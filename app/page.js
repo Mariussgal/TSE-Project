@@ -4,6 +4,8 @@ import ZoomParallax from '../components/Zoomparallax/index';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import Header from '../components/Header.jsx'
+import About from '../components/About.jsx'
+import SectionTransition from '../components/SectionTransition.jsx';
 
 export default function Home() {
 
@@ -23,6 +25,8 @@ export default function Home() {
         <main className={styles.main}>
             <Header/>
             <ZoomParallax />
+            <SectionTransition />
+            <About/>
         </main>
     )
 }

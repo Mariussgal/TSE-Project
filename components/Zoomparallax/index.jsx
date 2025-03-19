@@ -30,7 +30,7 @@ export default function Index() {
         {
             src: Picture1,
             scale: scale4,
-            text: "MARIUS"
+            text: "FORESTER PRO"
         },
         {
             src: Picture2,
