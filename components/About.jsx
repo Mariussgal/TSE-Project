@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import './About.css';
 
@@ -37,7 +35,7 @@ const materials = [
     id: 1, 
     name: 'Dyneema', 
     benefit: 'Prevents chainsaw cuts and mechanical injuries',
-    image: './../public/images/Dyneema.jpg', 
+    image: '/images/image8.jpg'
   },
   { 
     id: 2, 

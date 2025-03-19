@@ -7,13 +7,13 @@ const SectionTransition = () => {
   
   const backgroundOpacity = useTransform(
     scrollYProgress,
-    [0.25, 0.3], // Start transitioning at 25% scroll, complete by 30%
+    [0.25, 0.3],
     [0, 1]
   );
 
   const textOpacity = useTransform(
     scrollYProgress,
-    [0.15, 0.32, 0.50], // Start appearing at 27%, fully visible at 32%, start fading at 37%
+    [0.15, 0.32, 0.50],
     [0, 1, 0]
   );
 
