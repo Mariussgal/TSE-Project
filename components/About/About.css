@@ -34,8 +34,7 @@
   display: flex;
   align-items: center;
   padding: 80px 8vw;
-  background: linear-gradient(rgba(10, 31, 18, 0.9), rgba(10, 31, 18, 0.9)), 
-              url('/images/forest-background.jpg') no-repeat center center;
+  background: linear-gradient(rgba(10, 31, 18, 0.9), rgba(10, 31, 18, 0.95));
   background-size: cover;
 }
 
@@ -354,10 +353,7 @@
 }
 
 .pricing-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -368,19 +364,17 @@
   text-align: center;
   position: relative;
   transition: transform 0.3s ease;
+  background-color: rgba(255, 107, 53, 0.15);
+  border: 2px solid #ff6b35;
+  z-index: 2;
+
 }
 
 .pricing-card:hover {
   transform: translateY(-10px);
 }
 
-.pricing-card.premium {
-  background-color: rgba(255, 107, 53, 0.15);
-  border: 2px solid #ff6b35;
-  z-index: 2;
-}
-
-.best-value {
+.Available {
   position: absolute;
   top: -15px;
   left: 50%;

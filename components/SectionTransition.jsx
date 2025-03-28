@@ -52,7 +52,7 @@ const SectionTransition = () => {
             <text x="50" y="53" textAnchor="middle" fill="#ff6b35" fontWeight="bold" fontSize="8">SAFETY</text>
           </svg>
         </motion.div>
-        <h2>FORESTER PRO</h2>
+        <h2>LOGWEAR</h2>
         <p>Advanced Protection for Professional Lumberjacks</p>
         <div className="scroll-indicator">
           <span>Scroll to explore</span>

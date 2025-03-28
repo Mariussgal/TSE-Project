@@ -137,7 +137,7 @@ const LumberjackJacketSection = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={containerVariants}
           >
-            <motion.h1 variants={itemVariants}>FORESTER PRO</motion.h1>
+            <motion.h1 variants={itemVariants}>LOGWEAR</motion.h1>
             <motion.h2 variants={itemVariants}>Advanced Protection for Professional Lumberjacks</motion.h2>
             <motion.p variants={itemVariants}>
               Engineered to withstand the toughest conditions while providing unmatched safety, comfort, and mobility for forestry professionals.
@@ -345,24 +345,13 @@ const LumberjackJacketSection = () => {
         >
           <motion.h2 variants={itemVariants}>Ready to Upgrade Your Protection?</motion.h2>
           <motion.div className="pricing-options" variants={itemVariants}>
-            <div className="pricing-card standard">
-              <h3>Standard Edition</h3>
-              <div className="price">$249</div>
-              <ul className="features-list">
-                <li>Basic cut protection</li>
-                <li>Water-resistant shell</li>
-                <li>Standard visibility features</li>
-                <li>1-year warranty</li>
-              </ul>
-              <a href="#" className="buy-btn">Buy Now</a>
-            </div>
-            
-            <div className="pricing-card premium">
-              <div className="best-value">BEST VALUE</div>
+
+            <div className="pricing-card ">
+              <div className="Available">AVAILABLE</div>
               <h3>Professional Edition</h3>
               <div className="price">$349</div>
               <ul className="features-list">
-                <li>Enhanced cut protection</li>
+                <li>Maximumcut protection</li>
                 <li>Fully waterproof GORE-TEX®</li>
                 <li>High-visibility panels</li>
                 <li>Thermal insulation</li>
@@ -371,18 +360,7 @@ const LumberjackJacketSection = () => {
               <a href="#" className="buy-btn primary">Buy Now</a>
             </div>
             
-            <div className="pricing-card elite">
-              <h3>Elite Edition</h3>
-              <div className="price">$499</div>
-              <ul className="features-list">
-                <li>Maximum cut protection</li>
-                <li>Premium GORE-TEX® Pro</li>
-                <li>Integrated safety features</li>
-                <li>Advanced climate control</li>
-                <li>Lifetime warranty</li>
-              </ul>
-              <a href="#" className="buy-btn">Buy Now</a>
-            </div>
+
           </motion.div>
         </motion.div>
       </section>
@@ -425,14 +403,14 @@ const LumberjackJacketSection = () => {
 
       <footer className="site-footer">
         <div className="footer-container">
-          <div className="footer-logo">FORESTER PRO</div>
+          <div className="footer-logo">LOGWEAR</div>
           <div className="footer-links">
             <a href="#product">Product</a>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
           </div>
-          <div className="footer-copyright">© {new Date().getFullYear()} Forester Pro. All Rights Reserved</div>
+          <div className="footer-copyright">© {new Date().getFullYear()} LOGWEAR. All Rights Reserved</div>
         </div>
       </footer>
     </div>

@@ -15,7 +15,7 @@ const robotoCondensed = Roboto_Condensed({
 })
 
 export const metadata = {
-  title: 'FORESTER PRO | Advanced Protection for Lumberjacks',
+  title: 'LOGWEAR| Advanced Protection for Lumberjacks',
   description: 'Professional-grade protective jackets for lumberjacks. Engineered for safety, comfort, and durability in the toughest environments.',
 }
 
