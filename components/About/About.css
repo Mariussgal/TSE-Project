@@ -353,7 +353,8 @@
 }
 
 .pricing-options {
-  width: 40vw;
+  width: 90%;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -643,6 +644,7 @@
   .contact-email, .contact-phone {
     font-size: 1.1rem;
   }
+
 }
 
 .coming-soon-popup {
