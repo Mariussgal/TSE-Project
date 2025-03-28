@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
 
@@ -92,7 +92,22 @@ const testimonials = [
   },
 ];
 
+
+
+
+
 const LumberjackJacketSection = () => {
+  
+  const [showPopup, setShowPopup] = useState(false);
+  const [isProcessingOrder, setIsProcessingOrder] = useState(false); 
+
+  const handleBuyNow = () => {
+    setShowPopup(true); 
+    
+  };
+  
+  
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -125,6 +140,7 @@ const LumberjackJacketSection = () => {
       }
     }
   };
+
 
   return (
     <div className="lumberjack-section">
@@ -357,7 +373,13 @@ const LumberjackJacketSection = () => {
                 <li>Thermal insulation</li>
                 <li>3-year warranty</li>
               </ul>
-              <a href="#" className="buy-btn primary">Buy Now</a>
+              <button 
+                onClick={handleBuyNow} 
+                className={`buy-btn primary ${isProcessingOrder ? 'processing' : ''} ${showPopup ? 'complete' : ''}`}
+                disabled={isProcessingOrder}
+              >
+                  {isProcessingOrder ? 'Processing...' : showPopup ? 'Order Complete!' : 'Buy Now'}
+              </button>
             </div>
             
 
@@ -413,6 +435,19 @@ const LumberjackJacketSection = () => {
           <div className="footer-copyright">© {new Date().getFullYear()} LOGWEAR. All Rights Reserved</div>
         </div>
       </footer>
+    
+    {showPopup &&(
+      <div className="coming-soon-popup">
+        <div className="popup-content">
+          <span className="close-popup" onClick={()=> setShowPopup(false)}>
+            &times;
+          </span>
+              <h3>Coming Soon!</h3>
+               <p>This feature is currently under development and will be available soon.</p>
+               <p>Thank you for your interest!</p>
+        </div>
+      </div>
+    )}
     </div>
   );
 };
