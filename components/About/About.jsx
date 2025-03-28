@@ -244,7 +244,7 @@ const LumberjackJacketSection = () => {
             </div>
                 
               
-              <div className="material-info" >
+              <div className="material-info">
                 <h3>{material.name}</h3>
                 <p>{material.benefit}</p>
               </div>

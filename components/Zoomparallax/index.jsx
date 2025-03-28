@@ -70,7 +70,7 @@ export default function Index() {
                                     fill
                                     alt="image"
                                     placeholder='blur'
-                                    style={{ filter: index === 0 ? 'blur(4px)' : 'none' }}
+                                    style={{ filter: index === 0 ? 'blur(4px) brightness(0.8)' : 'none' }}
                                 />
                                   {text && (
                                             <div className={styles.textOverlay}>
