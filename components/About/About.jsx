@@ -2,30 +2,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
 
+
 const features = [
   {
     id: 1,
     title: 'Cut-Resistant Technology',
     description: 'Advanced Kevlar-infused fabric that prevents chainsaw cuts and slashes',
-    icon: '/images/image1.jpg', 
   },
   {
     id: 2,
     title: 'Weather Protection',
     description: 'Waterproof and windproof outer shell keeps you dry and warm in any condition',
-    icon: '/images/image2.jpg', 
   },
   {
     id: 3,
     title: 'High Visibility',
     description: 'Fluorescent panels and reflective strips ensure you remain visible in any environment',
-    icon: '/images/image3.jpg', 
   },
   {
     id: 4,
     title: 'Comfort Design',
     description: 'Ergonomic fit with stretch panels allows full range of motion while working',
-    icon: '/images/image4.jpg',
   },
 ];
 
@@ -35,19 +32,19 @@ const materials = [
     id: 1, 
     name: 'Dyneema', 
     benefit: 'Prevents chainsaw cuts and mechanical injuries',
-    image: '/images/image8.jpg'
+    image: '/images/image8.jpg', 
   },
   { 
     id: 2, 
     name: 'GORE-TEX® Membrane', 
     benefit: 'Waterproof, windproof, yet breathable',
-    image: '/images/image7.jpg', 
+    image: '/images/image9.jpg', 
   },
   { 
     id: 3, 
-    name: 'Thermal Insulation', 
+    name: 'Lavalan® Wool Insulation', 
     benefit: 'Maintains body heat in cold environments',
-    image: '/images/image1.jpg',
+    image: '/images/image10.jpg',
   },
 ];
 
@@ -199,7 +196,6 @@ const LumberjackJacketSection = () => {
             >
               <div className="feature-icon">
                 <div className="icon-placeholder">
-                  {/* Replace with actual icon */}
                   <span>{feature.id}</span>
                 </div>
               </div>
@@ -242,13 +238,13 @@ const LumberjackJacketSection = () => {
               className="material-card"
               variants={itemVariants}
             >
-              <div className="material-image">
-                <div className="image-placeholder">
-                  {/* Replace with actual material image */}
-                  <span>{material.name}</span>
-                </div>
-              </div>
-              <div className="material-info">
+             <div className="material-image-container">
+              <img src={material.image} alt={material.name}
+              className="material-image" />
+            </div>
+                
+              
+              <div className="material-info" >
                 <h3>{material.name}</h3>
                 <p>{material.benefit}</p>
               </div>

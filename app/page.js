@@ -4,7 +4,7 @@ import ZoomParallax from '../components/Zoomparallax/index';
 import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import Header from '../components/Header.jsx'
-import About from '../components/About.jsx'
+import About from '../components/About/About.jsx'
 import SectionTransition from '../components/SectionTransition.jsx';
 
 export default function Home() {
