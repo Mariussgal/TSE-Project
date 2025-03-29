@@ -2,7 +2,7 @@
     "name": "LOGWEAR Assistant",
     "short_name": "LOGWEAR",
     "description": "Emergency and safety assistant for forestry professionals",
-    "start_url": "/progressivewebapp",
+    "start_url": "https://tse-project.vercel.app/progressivewebapp",
     "display": "standalone",
     "background_color": "#0a1f12",
     "theme_color": "#ff6b35",
