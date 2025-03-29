@@ -1,13 +1,87 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import './pwa.css';
 
 export default function page(){
   const [activeTab, setActiveTab] = useState('emergency');
   
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
+  const [installEvent, setInstallEvent] = useState(null);
+
+
+  useEffect(() => {
+    const handleBeforeInstall = (e) => {
+      e.preventDefault();
+      setInstallEvent(e);
+      setShowInstallPrompt(true);
+    };
+  
+    window.addEventListener('beforeinstallprompt', handleBeforeInstall);
+    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
+    }, []);
+
+  const handleInstall = () => {
+    if (installEvent) {
+      installEvent.prompt();
+      installEvent.userChoice.then(result => {
+        if (result.outcome === 'accepted') {
+          console.log('Application installée');
+        }
+        setShowInstallPrompt(false);
+      });
+    }
+  };
+
   return (
     <div className="assistant-container">
+
+      {showInstallPrompt && (
+        <div style ={{
+          position :'fixed',
+          bottom: 0,
+          left:0,
+          right:0,
+          background: '#143325',
+          borderTop: '2px solid #ff6b35',
+          padding: '10px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          zIndex: 1000
+        }}>
+          <span style ={{ marginLeft : '10px'}}>Install LOGWEAR Assistant on your device</span>
+            <div>
+              <button
+                onClick={handleInstall}
+                style={{
+                  background: '#ff6b35',
+                  color: 'white',
+                  border: 'none',
+                  padding: '8px 16px',
+                  borderRadius: '4px',
+                  marginRight: '10px',
+                  cursor: 'pointer'
+                }}
+              >
+                Install
+              </button>
+              <button
+                onClick={()=>setShowInstallPrompt(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  fontSize: '20px',
+                  cursor: 'pointer'
+                }} 
+              >
+                x
+              </button>
+            </div>
+        </div>
+      )}
+
       <header className="assistant-header">
         <Link href="/" className="back-link">← Back to website</Link>
         <h1>LOGWEAR Assistant</h1>
