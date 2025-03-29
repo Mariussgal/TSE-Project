@@ -12,6 +12,7 @@ const Header = () => {
   return (
     <header className={`header ${menuOpen ? 'menu-active' : ''}`}>
       <div className="header-container">
+        <Link href="/progressivewebapp" className="app-button">Launch App</Link>
         <button className={`menu-toggle ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span className="menu-icon"></span>
         </button>
@@ -19,6 +20,7 @@ const Header = () => {
         <nav className={`nav-menu ${menuOpen ? 'open' : ''}`}>
           <div className="nav-links">
             <Link href="/" className="nav-link">Home</Link>
+            <Link href="/progressivewebapp" className="nav-link">Assistant App</Link>
             <Link href="https://github.com/Mariussgal/TSE-Project" className="nav-link">Github</Link>
           </div>
         </nav>

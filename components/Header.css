@@ -126,8 +126,32 @@
   pointer-events: none;
 }
 
+.app-button {
+  background-color: #ff6b35;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-right: auto;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.app-button:hover {
+  background-color: #e85a26;
+}
+
+
 @media (max-width: 768px) {
   .header-container {
     padding: 0.8rem 1.5rem;
+  }
+
+  .app-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
   }
 }
