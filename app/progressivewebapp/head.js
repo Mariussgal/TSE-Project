@@ -7,7 +7,7 @@ export default function Head() {
         <meta name="description" content="Emergency and safety assistant for forestry professionals" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/logo-192.png" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </>
     );
   }
