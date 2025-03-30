@@ -46,7 +46,7 @@ export default function OfflineIndicator() {
         fontWeight: 'bold',
         marginBottom: '5px',
         color: '#ffa500'
-      }}>HORS LIGNE</div>
+      }}>OFFLINE</div>
       <div style={{
         fontSize: '0.8rem',
         color: 'white'

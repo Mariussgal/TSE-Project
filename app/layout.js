@@ -14,7 +14,6 @@ const robotoCondensed = Roboto_Condensed({
   display: 'swap',
 })
 
-// app/layout.js
 export const metadata = {
   title: 'LOGWEAR | Advanced Protection for Lumberjacks',
   description: 'Professional-grade protective jackets for lumberjacks. Engineered for safety, comfort, and durability in the toughest environments.',
