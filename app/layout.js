@@ -14,17 +14,23 @@ const robotoCondensed = Roboto_Condensed({
   display: 'swap',
 })
 
+// app/layout.js
 export const metadata = {
   title: 'LOGWEAR | Advanced Protection for Lumberjacks',
   description: 'Professional-grade protective jackets for lumberjacks. Engineered for safety, comfort, and durability in the toughest environments.',
   manifest: '/manifest.json',
-  themeColor: '#ff6b35',
-  viewport: 'width=device-width, initial-scale=1, user-scalable=no',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
     title: 'LOGWEAR'
   }
+}
+
+export const viewport = {
+  themeColor: '#ff6b35',
+  width: 'device-width',
+  initialScale: 1,
+  userScalable: false
 }
 
 export default function RootLayout({ children }) {
