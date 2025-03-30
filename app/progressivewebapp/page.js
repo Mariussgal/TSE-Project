@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import './pwa.css';
+import UpdateNotification from '/components/UpdateNotifications';
+import OfflineIndicator from '/components/OfflineIndicator';
 
 export default function page(){
   const [activeTab, setActiveTab] = useState('emergency');
@@ -35,6 +37,7 @@ export default function page(){
 
   return (
     <div className="assistant-container">
+      <OfflineIndicator />
 
       {showInstallPrompt && (
         <div style ={{
@@ -113,6 +116,7 @@ export default function page(){
         {activeTab === 'technical' && <TechnicalSection />}
         {activeTab === 'community' && <CommunitySection />}
       </main>
+      <UpdateNotification />
     </div>
   );
 }
