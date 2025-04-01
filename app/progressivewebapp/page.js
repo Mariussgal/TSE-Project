@@ -257,11 +257,11 @@ function TechnicalSection() {
         </div>
         
         <div className="material-doc-card">
-          <h3>Lavalan® Wool Insulation</h3>
+          <h3>Outlast® Material</h3>
           <div className="doc-details">
-            <p><strong>Certificate:</strong> EN ISO 11092</p>
-            <p><strong>Thermal Resistance:</strong> 0.425 m²K/W</p>
-            <p><strong>Composition:</strong> 100% European wool</p>
+            <p><strong>Certificate:</strong> OEKO-TEX® Standard 100</p>
+            <p><strong>Thermal Resistance:</strong> 0.128 - 0.17 m²K/W </p>
+            <p><strong>Composition:</strong> Recycled polyester / Lyocell / natural wax.</p>
             <p><strong>Sustainability:</strong> Biodegradable, renewable</p>
           </div>
           <a href="#" className="doc-download">Download Full Specs (PDF)</a>

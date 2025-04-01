@@ -30,7 +30,7 @@ const materials = [
 
   { 
     id: 1, 
-    name: 'Dyneema', 
+    name: 'Dyneema®', 
     benefit: 'Prevents chainsaw cuts and mechanical injuries',
     image: '/images/image8.jpg', 
   },
@@ -42,8 +42,8 @@ const materials = [
   },
   { 
     id: 3, 
-    name: 'Lavalan® Wool Insulation', 
-    benefit: 'Maintains body heat in cold environments',
+    name: 'Outlast® Material', 
+    benefit: 'Captures and store heat',
     image: '/images/image10.jpg',
   },
 ];
@@ -361,16 +361,17 @@ const LumberjackJacketSection = () => {
         >
           <motion.h2 variants={itemVariants}>Ready to Upgrade Your Protection?</motion.h2>
           <motion.div className="pricing-options" variants={itemVariants}>
-
+          <div className="card-components">
             <div className="pricing-card ">
               <div className="Available">AVAILABLE</div>
-              <h3>Professional Edition</h3>
+              <h3>Extreme Cold Edition</h3>
               <div className="price">$349</div>
               <ul className="features-list">
                 <li>Maximumcut protection</li>
                 <li>Fully waterproof GORE-TEX®</li>
                 <li>High-visibility panels</li>
                 <li>Thermal insulation</li>
+                <li>Armpit aeration</li>
                 <li>3-year warranty</li>
               </ul>
               <button 
@@ -381,6 +382,27 @@ const LumberjackJacketSection = () => {
                   {isProcessingOrder ? 'Processing...' : showPopup ? 'Order Complete!' : 'Buy Now'}
               </button>
             </div>
+            <div className="pricing-card ">
+              <div className="Available">AVAILABLE</div>
+              <h3>High heat Edition</h3>
+              <div className="price">$349</div>
+              <ul className="features-list">
+                <li>Maximumcut protection</li>
+                <li>Fully waterproof GORE-TEX®</li>
+                <li>High-visibility panels</li>
+                <li> Reflects UV</li>
+                <li>Armpit aeration</li>
+                <li>3-year warranty</li>
+              </ul>
+              <button 
+                onClick={handleBuyNow} 
+                className={`buy-btn primary ${isProcessingOrder ? 'processing' : ''} ${showPopup ? 'complete' : ''}`}
+                disabled={isProcessingOrder}
+              >
+                  {isProcessingOrder ? 'Processing...' : showPopup ? 'Order Complete!' : 'Buy Now'}
+              </button>
+            </div>
+          </div>
             
 
           </motion.div>

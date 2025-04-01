@@ -3,7 +3,6 @@ import React from 'react';
 import './qrcode.css';
 import Header from '/components/Header';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function QRCodePage() {
   return (

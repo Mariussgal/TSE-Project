@@ -340,8 +340,17 @@
   margin: 0;
 }
 
+.card-components {
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .pricing-section {
-  padding: 100px 8vw;
+  padding: 8vw 8vw;
   background: linear-gradient(rgba(10, 31, 18, 0.9), rgba(10, 31, 18, 0.9));
   background-size: cover;
   text-align: center;
@@ -350,6 +359,7 @@
 .pricing-container h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .pricing-options {
@@ -368,8 +378,9 @@
   background-color: rgba(255, 107, 53, 0.15);
   border: 2px solid #ff6b35;
   z-index: 2;
-
-}
+  min-width:300px;
+  
+} 
 
 .pricing-card:hover {
   transform: translateY(-10px);
@@ -644,6 +655,20 @@
   .contact-email, .contact-phone {
     font-size: 1.1rem;
   }
+
+  .card-components{
+    flex-direction: column;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+  }
+
+  .pricing-options {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
 
 }
 
