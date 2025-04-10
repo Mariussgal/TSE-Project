@@ -1,5 +1,6 @@
-const CACHE_NAME = 'logwear-v2';
+const CACHE_NAME = 'logwear-v3'; 
 const urlsToCache = [
+  '/',
   '/progressivewebapp',
   '/manifest.json',
   '/icons/icon-192x192.png',
@@ -14,31 +15,46 @@ const urlsToCache = [
   '/images/image8.jpg',
   '/images/image9.jpg',
   '/images/image10.jpg',
-  '/images/image11.jpg'
+  '/images/image11.jpg',
+  '/images/image12.jpg'
 ];
 
 self.addEventListener('install', (event) => {
+  console.log('Service Worker: Installation en cours');
+  
   self.skipWaiting();
+  
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
-        console.log('Cache ouvert');
+        console.log('Service Worker: Cache ouvert');
         return cache.addAll(urlsToCache);
+      })
+      .catch(err => {
+        console.error('Service Worker: Erreur de mise en cache:', err);
       })
   );
 });
 
 self.addEventListener('activate', (event) => {
+  console.log('Service Worker: Activation en cours');
+  
   const cacheAllowlist = [CACHE_NAME];
+  
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheAllowlist.indexOf(cacheName) === -1) {
+            console.log('Service Worker: Suppression de l\'ancien cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
       );
+    })
+    .then(() => {
+      console.log('Service Worker: Activation terminée, contrôle revendiqué');
+      return self.clients.claim();
     })
   );
 });
@@ -49,24 +65,41 @@ self.addEventListener('fetch', (event) => {
   }
 
   event.respondWith(
-    fetch(event.request)
-      .then(response => {
-        const responseClone = response.clone();
-        caches.open(CACHE_NAME).then(cache => {
-          if (event.request.url.startsWith('http')) {
-            cache.put(event.request, responseClone);
-          }
-        });
-        return response;
+    caches.match(event.request)
+      .then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+
+        return fetch(event.request)
+          .then(networkResponse => {
+            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+              return networkResponse;
+            }
+
+            let responseToCache = networkResponse.clone();
+
+            if (event.request.url.startsWith('http')) {
+              caches.open(CACHE_NAME)
+                .then(cache => {
+                  cache.put(event.request, responseToCache);
+                });
+            }
+
+            return networkResponse;
+          });
       })
       .catch(() => {
-        return caches.match(event.request);
+        if (event.request.headers.get('accept').includes('text/html')) {
+          return caches.match('/progressivewebapp');
+        }
       })
   );
 });
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
+    console.log('Service Worker: Activation immédiate demandée');
     self.skipWaiting();
   }
 });

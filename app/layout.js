@@ -1,5 +1,6 @@
 import { Inter, Roboto_Condensed } from 'next/font/google'
 import './globals.css'
+import InstallPrompt from '../components/InstallPrompt'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.variable} ${robotoCondensed.variable}`}>
         {children}
+        <InstallPrompt />
         <script src="/register-sw.js" defer></script>
       </body>
     </html>
