@@ -7,7 +7,7 @@ const features = [
   {
     id: 1,
     title: 'Cut-Resistant Technology',
-    description: 'Advanced Kevlar-infused fabric that prevents chainsaw cuts and slashes',
+    description: 'Advanced dyneema material that prevents chainsaw cuts and slashes',
   },
   {
     id: 2,

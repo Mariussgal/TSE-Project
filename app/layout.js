@@ -1,6 +1,6 @@
 import { Inter, Roboto_Condensed } from 'next/font/google'
 import './globals.css'
-import InstallPrompt from '../components/InstallPrompt'
+import InstallPrompt from '../components/installprompt'
 
 const inter = Inter({ 
   subsets: ['latin'],
