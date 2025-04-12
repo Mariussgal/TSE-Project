@@ -14,7 +14,6 @@ export default function page(){
       
       <header className="assistant-header">
         <Link href="/" className="back-link">← Back to website</Link>
-        <Link href="/progressivewebapp/admin" className="back-link">Admin Dashboard</Link>
         <h1>LOGWEAR Assistant</h1>
       </header>
       
