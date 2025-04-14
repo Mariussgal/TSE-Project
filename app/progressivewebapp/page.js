@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import './pwa.css';
 import UpdateNotification from '/components/UpdateNotifications';
@@ -15,6 +15,7 @@ export default function page(){
       <header className="assistant-header">
         <Link href="/" className="back-link">← Back to website</Link>
         <h1>LOGWEAR Assistant</h1>
+        <Link href="/progressivewebapp/admin" className="dashboard-link">Admin dashboard</Link>
       </header>
       
       <nav className="assistant-tabs">

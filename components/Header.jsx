@@ -21,6 +21,7 @@ const Header = () => {
           <div className="nav-links">
             <Link href="/" className="nav-link">Home</Link>
             <Link href="/progressivewebapp" className="nav-link">Assistant App</Link>
+            <Link href="/progressivewebapp/admin" className="nav-link">Admin dashboard</Link>
             <Link href="/qrcode" className="nav-link">QR CODE</Link>
           </div>
         </nav>
