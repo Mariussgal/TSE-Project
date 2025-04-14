@@ -1,0 +1,205 @@
+.lumberjack-table-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .table-title {
+    color: #ff6b35;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.8rem;
+  }
+  
+  .loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 107, 53, 0.3);
+    border-radius: 50%;
+    border-top-color: #ff6b35;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .lumberjack-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e0e0e0;
+  }
+  
+  .lumberjack-table thead th {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    color: #ff6b35;
+    white-space: nowrap;
+  }
+  
+  .lumberjack-table tbody tr {
+    transition: background-color 0.3s;
+  }
+  
+  .lumberjack-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .lumberjack-table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .status-active {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: #2ecc71;
+  }
+  
+  .status-pause {
+    background-color: rgba(241, 196, 15, 0.2);
+    color: #f1c40f;
+  }
+  
+  .status-inactive {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+  }
+  
+  .equipment-status {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  
+  .equipment-optimal {
+    background-color: rgba(39, 174, 96, 0.1);
+    color: #2ecc71;
+  }
+  
+  .equipment-good {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+  }
+  
+  .equipment-check {
+    background-color: rgba(241, 196, 15, 0.1);
+    color: #f1c40f;
+  }
+  
+  .equipment-maintenance {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+  }
+  
+  .table-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-btn {
+    color: #3498db;
+  }
+  
+  .location-btn {
+    color: #e67e22;
+  }
+  
+  .more-btn {
+    color: #bdc3c7;
+  }
+  
+  .table-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .pagination-button {
+    background-color: rgba(255, 107, 53, 0.2);
+    color: #ff6b35;
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-button:hover {
+    background-color: rgba(255, 107, 53, 0.3);
+  }
+  
+  .pagination-button:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+  }
+  
+  .pagination-info {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .table-pagination {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    
+    .pagination-info {
+      order: -1;
+      margin-bottom: 0.5rem;
+    }
+  }
