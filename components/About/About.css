@@ -668,6 +668,22 @@
     max-width: 300px;
     margin: 0 auto;
   }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .contact-info h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-align: center ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
   
 
 }
