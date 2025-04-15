@@ -1,17 +1,17 @@
-# LOGWEAR - Advanced Protection for Lumberjacks
-
+# 🌲LOGWEAR🌲 - Advanced Protection for Lumberjacks
 
 ## 📋 Project Overview
 
-**This project was developed as part of an academic assignment focused on imagining an outfit or accessory to a profession, an activity or a use that allows its user to evolve in an environment that could endanger his or her integrity**
+**This project was developed as part of an academic assignment focused on imagining an outfit or an accessory to a profession, an activity or a use that allows its user to evolve in an environment that could endanger his or her integrity**
 
-Before beeing an app, LOGWEAR is primarily an advanced protective jacket designed specifically for lumberjacks and forestry professionals. The jacket incorporates cutting-edge materials like Dyneema®, GORE-TEX®, and Outlast® to provide superior protection against chainsaw injuries, harsh weather conditions, and environmental issues.
+
+Thus before beeing an app, LOGWEAR is primarily an advanced protective jacket designed specifically for lumberjacks and forestry professionals. The jacket incorporates cutting-edge materials like Dyneema®, GORE-TEX®, and Outlast® to provide superior protection against chainsaw injuries and harsh weather conditions.
 
 What makes LOGWEAR unique is its smart connectivity features, integrated directly into the jacket:
 
 - Emergency SOS button built into the jacket connected to the app
 - Embedded sensors that monitors health condition of the user and detects if the user is in need of emmergency services
-- Location tracking capabilities if emergency sservices are needed
+- Location tracking capabilities if emergency services are needed
 
 The LOGWEAR Progressive Web App (PWA) serves as the digital assistant to the physical jacket, enabling lumberjacks to access emergency services, technical documentation, and community support even in areas with limited connectivity.
 
@@ -61,10 +61,8 @@ The LOGWEAR Progressive Web App (PWA) serves as the digital assistant to the phy
 
 - **Frontend Framework**: Next.js 15
 - **UI Libraries**: React 19, Framer Motion
-- **Styling**: SCSS/CSS 
 - **Animations**: GSAP, Framer Motion, Lenis (smooth scrolling)
 - **PWA Features**: Service Worker, Manifest, Offline Support
-- **State Management**: React Hooks and Context API
 
 ## 🔐 Admin Dashboard Access
 
