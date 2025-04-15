@@ -171,8 +171,8 @@ const LumberjackJacketSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="image-placeholder">
-              <span>PRODUCT IMAGE</span>
+            <div >
+            <img src="/images/image15.jpg" alt="Product Image" className="image-placeholder"></img>
             </div>
           </motion.div>
         </div>
