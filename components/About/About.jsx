@@ -433,13 +433,14 @@ const LumberjackJacketSection = () => {
           >
             <motion.div className="contact-info" variants={itemVariants}>
               <h3>Our team is ready to help you</h3>
-              <a href="mailto:marius.gal@esme.fr" className="contact-email">marius.gal@esme.fr</a>
             </motion.div>
             
             <motion.div className="contact-socials" variants={itemVariants}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <div className="social-links-row">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+              </div>
             </motion.div>
           </motion.div>
         </div>
