@@ -86,7 +86,24 @@ Note: This is a simulated login system for academic demonstration purposes only.
 ## 🏗️ Project Structure
 
 ```
-
+/
+├── app/                      # Next.js app directory
+│   ├── progressivewebapp/    # PWA application
+│   │   ├── admin/            # Admin dashboard
+│   │   └── ...               # Other PWA pages
+│   ├── qrcode/               # QR code page
+│   └── ...                   # Main pages
+├── components/               # React components
+│   ├── About/                # About section components
+│   ├── Zoomparallax/         # Parallax effect components
+│   └── ...                   # Other components
+├── public/                   # Static assets
+│   ├── icons/                # App icons
+│   ├── images/               # Image assets
+│   ├── manifest.json         # PWA manifest
+│   ├── sw.js                 # Service worker
+│   └── register-sw.js        # Service worker registration
+└── ...                       # Configuration files
 ```
 
 ## 🔧 Installation and Setup
