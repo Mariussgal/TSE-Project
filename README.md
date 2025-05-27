@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌲LOGWEAR🌲 - Advanced Protection for Lumberjacks
 
-## Getting Started
+## 📋 Project Overview
 
-First, run the development server:
+**This project was developed as part of an academic assignment focused on imagining an outfit or an accessory to a profession, an activity or a use that allows its user to evolve in an environment that could endanger his or her integrity**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+Thus before beeing an app, LOGWEAR is primarily an advanced protective jacket designed specifically for lumberjacks and forestry professionals. The jacket incorporates cutting-edge materials like Dyneema®, GORE-TEX®, and Outlast® to provide superior protection against chainsaw injuries and harsh weather conditions.
+
+What makes LOGWEAR unique is its smart connectivity features, integrated directly into the jacket:
+
+- Emergency SOS button built into the jacket connected to the app
+- Embedded sensors that monitors health condition of the user and detects if the user is in need of emmergency services
+- Location tracking capabilities if emergency services are needed
+
+The LOGWEAR Progressive Web App (PWA) serves as the digital assistant to the physical jacket, enabling lumberjacks to access emergency services, technical documentation, and community support even in areas with limited connectivity.
+
+---
+
+## ✨ Features
+
+### 🧥 Smart Protective Jacket
+
+- **Smart Protective Jacket**
+   - Dyneema® cut-resistant technology to prevent chainsaw injuries
+   - GORE-TEX® membrane for waterproof and windproof protection
+   - Outlast® thermal regulation material for comfort in varying temperatures
+
+- **Smart Connectivity**
+   - Integrated SOS button on the jacket for one-press emergency alerts
+   - Location tracking for improved safety coordination
+   - Sensors monitoring health condition of the user
+
+### 📱 Progressive Web App (PWA)
+
+- **Emergency Assistant**
+  - SOS emergency feature with location sharing simulation
+  - First aid guides for common forestry injuries
+  
+
+- **Technical Documentation**
+  - Material specifications and certification information
+  - Safety compliance standards reference
+  - Technical specifications for protective equipment
+
+- **Community Forum**
+  - User feedback and experience sharing
+  - Community posts and discussions
+  - Feedback submission system (simulated)
+
+### 👨‍💼 Admin Dashboard
+
+- Real-time statistics visualization (simulated)
+- Worker management interface
+- Notifications and alerts system
+- Quick action buttons for common management tasks
+
+---
+
+## 🚀 Technologies Used
+
+- **Frontend Framework**: Next.js 15
+- **UI Libraries**: React 19, Framer Motion
+- **Animations**: GSAP, Framer Motion, Lenis (smooth scrolling)
+- **PWA Features**: Service Worker, Manifest, Offline Support
+
+## 🔐 Admin Dashboard Access
+
+For demonstration purposes, the admin dashboard can be accessed with the following credentials:
+
+- **URL**: `/progressivewebapp/admin`
+- **Username**: `admin`
+- **Password**: `logwear2025`
+
+Note: This is a simulated login system for academic demonstration purposes only.
+
+## 🌟 Key Implementation Highlights
+
+- **Smooth Scrolling and Parallax Effects**: Implementation of advanced animation techniques using Framer Motion and GSAP
+- **Progressive Web App**: Installable interface and offline support
+- **Responsive Design**: Fully responsive interface supporting mobile, tablet, and desktop devices
+- **Interactive UI Components**: Custom-built interactive components for enhanced user experience
+- **Simulated Data**: Realistic data simulation for demonstration purposes
+
+
+## 🏗️ Project Structure
+
+```
+/
+├── app/                      # Next.js app directory
+│   ├── progressivewebapp/    # PWA application
+│   │   ├── admin/            # Admin dashboard
+│   │   └── ...               # Other PWA pages
+│   ├── qrcode/               # QR code page
+│   └── ...                   # Main pages
+├── components/               # React components
+│   ├── About/                # About section components
+│   ├── Zoomparallax/         # Parallax effect components
+│   └── ...                   # Other components
+├── public/                   # Static assets
+│   ├── icons/                # App icons
+│   ├── images/               # Image assets
+│   ├── manifest.json         # PWA manifest
+│   ├── sw.js                 # Service worker
+│   └── register-sw.js        # Service worker registration
+└── ...                       # Configuration files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Installation and Setup
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 
+- npm 
 
-## Learn More
+### Installation Steps
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mariussgal/TSE-Project.git
+   cd tse-project
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
