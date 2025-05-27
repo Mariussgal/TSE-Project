@@ -170,7 +170,7 @@ function TechnicalSection() {
             <p><strong>Density:</strong> 0.97 g/cm³</p>
             <p><strong>Tensile Strength:</strong> 3.6 GPa</p>
           </div>
-          <a href="#" className="doc-download">Download Full Specs (PDF)</a>
+          <a href="/docs/DYNEEMASPECS.docx" download className="doc-download">Download Full Specs (DOCX)</a>
         </div>
         
         <div className="material-doc-card">
@@ -181,7 +181,7 @@ function TechnicalSection() {
             <p><strong>Breathability:</strong> RET &lt; 6</p>
             <p><strong>Material:</strong> ePTFE Membrane</p>
           </div>
-          <a href="#" className="doc-download">Download Full Specs (PDF)</a>
+          <a href="/docs/GORE-TEX FULL SPECS.docx" download className="doc-download">Download Full Specs (DOCX)</a>
         </div>
         
         <div className="material-doc-card">
@@ -192,7 +192,7 @@ function TechnicalSection() {
             <p><strong>Composition:</strong> Recycled polyester / Lyocell / natural wax.</p>
             <p><strong>Sustainability:</strong> Biodegradable, renewable</p>
           </div>
-          <a href="#" className="doc-download">Download Full Specs (PDF)</a>
+          <a href="/docs/OUTLAST SPECS PDF.docx" download className="doc-download">Download Full Specs (DOCX)</a>
         </div>
       </div>
       
