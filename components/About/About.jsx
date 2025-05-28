@@ -365,7 +365,7 @@ const LumberjackJacketSection = () => {
             <div className="pricing-card ">
               <div className="Available">AVAILABLE</div>
               <h3>Extreme Cold Edition</h3>
-              <div className="price">$349</div>
+              <div className="price">$400</div>
               <ul className="features-list">
                 <li>Maximumcut protection</li>
                 <li>Fully waterproof GORE-TEX®</li>
@@ -385,7 +385,7 @@ const LumberjackJacketSection = () => {
             <div className="pricing-card ">
               <div className="Available">AVAILABLE</div>
               <h3>High heat Edition</h3>
-              <div className="price">$349</div>
+              <div className="price">$400</div>
               <ul className="features-list">
                 <li>Maximumcut protection</li>
                 <li>Fully waterproof GORE-TEX®</li>
